@@ -4,7 +4,7 @@ class Syndication
 	# -meetup api
 	# -eventful api
 	# -ticketmaster api
-	# 
+	# -stubhub
 
   def perform
 		# call to eventbrite API to create new event
