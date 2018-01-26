@@ -1,7 +1,6 @@
 class ApplicationController < ActionController::API
   # All other controllers inherit from this controller, so these functions are used throughout other controllers
 
-
 	# this will take a hash and return a jwt token
   def issue_token(payload)
     JWT.encode(payload, "secret")
@@ -32,16 +31,6 @@ class ApplicationController < ActionController::API
 		else
 			return "hello from current User"
     end
-  end
-
-  # Checks if user is logged in or not
-  def logged_in?
-    !!current_user
-  end
-
-  # This function can be used to check if authorized for specific actions
-  def authorized
-    redirect_to '/api/v1/login' unless logged_in?
   end
 
 end

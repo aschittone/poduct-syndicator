@@ -22,6 +22,6 @@
 set :environment, "development"
 set :output, {:error => "log/cron_error_log.log", :standard => "log/cron_log.log"}
 
-every 1.minute do # 1.minute 1.day 1.week 1.month 1.year is also supported
+every 1.hour do # 1.minute 1.day 1.week 1.month 1.year is also supported
   rake "syndicate"
 end

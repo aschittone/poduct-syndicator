@@ -2,14 +2,14 @@ class CreateProducts < ActiveRecord::Migration[5.1]
   def change
     create_table :products do |t|
       t.string :name
-      t.integer :price
+      t.string :price
       t.string :description
-      t.datetime :start_date
-      t.datetime :end_date      
+      t.string :start_date
+      t.string :end_date      
       t.string :category
       t.string :sub_category
-      t.datetime :start_time
-      t.datetime :end_time
+      t.string :start_time
+      t.string :end_time
       t.string :location
       t.integer :user_id
 
