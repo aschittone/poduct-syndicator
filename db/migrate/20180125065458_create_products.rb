@@ -4,7 +4,8 @@ class CreateProducts < ActiveRecord::Migration[5.1]
       t.string :name
       t.integer :price
       t.string :description
-      t.datetime :date
+      t.datetime :start_date
+      t.datetime :end_date      
       t.string :category
       t.string :sub_category
       t.datetime :start_time
